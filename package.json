@@ -1,0 +1,27 @@
+{
+  "name": "y",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "prettier": "^3.1.0",
+    "server": "^1.0.0",
+    "turbo": "latest",
+    "typescript": "^5.3.3",
+    "workspace": "^0.0.1-preview.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@9.5.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
